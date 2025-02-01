@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,9 +18,11 @@ export default function Home() {
             </p>
           </div>
 
-          <button className="px-7 py-2 bg-primary text-primary-foreground rounded-lg ">
-            Get Started
-          </button>
+          <Link href={"/dashboard"}>
+            <button className="px-7 py-2 bg-primary text-primary-foreground rounded-lg ">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
 
